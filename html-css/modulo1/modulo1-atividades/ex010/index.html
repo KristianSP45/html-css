@@ -15,5 +15,15 @@
         <img src="imagens/foto-g.png" alt="Imagem flexível">
     </picture><!--Era pra ser 700 e 1000, mas tem uma folga de 50px por causa da barra de rolagem-->
     <!--Tem que ser do maior para o menor ou do maior para o menor,a ordem é essencial-->
+
+    <h1>Reproduzindo áudios em HTML5.</h1>
+    <audio src="midia/ssstik.io_1697579047353.mp3" controls autoplay></audio><!-- MP3 WAV(evitar pq é muito pesado) OGG-->
+
+    <audio preload="metadata" controls>
+        <source src="midia/ssstik.io_1697579047353.mp3" type="audio/mpeg">
+        <source src="midia/ssstik.io_1697579047353.ogg" type="audio/ogg">
+        <source src="midia/ssstik.io_1697579047353.wav" type="audio/wav">
+        <p>Infelizmente seu navegador não consegue reproduzir áudio. <a href="midia/ssstik.io_1697579047353.mp3"> Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
 </body>
 </html>
