@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Links</title>
+    <style>
+        /* SELETORES PERSONALIZADOS
+        #  = id
+        .  = class
+        :  = pseudo-class
+        :: = pseudo-element
+        >  = children
+        */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        a {
+            color: skyblue;
+        }
+
+        a:visited {
+            color: darkblue;
+        }
+
+        a:hover {
+            color: rgb(23, 23, 255);
+        }
+
+        a:active {
+            color: darkorange;
+        }
+
+        .especial{
+            background-color: rgb(255, 106, 106);
+        }
+
+        .especial::before{
+            content: '⇒';
+        }
+
+        .especial::after{
+            content: '⇐';
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Personalizando Links</h1>
+    <ul>
+        <li><a href="https://github.com/KristianSP45" target="_blank" class="especial">Repositório GitHub</a></li>
+        <li><a href="https://store.steampowered.com/app/3240220/Grand_Theft_Auto_V_Enhanced/" target="_blank">Jogo do Século</a></li>
+        <li><a href="https://www.youtube.com/@alanzoka" target="_blank">TOP Youtuber do Brasil</a></li>
+    </ul>
+</body>
+
+</html>
