@@ -6,12 +6,26 @@
     <title>Posicionamento</title>
     <style>
         body{
+            height: 100vh;
             background-color: black;
-            background-image: url('imagens/wallpaper002.jpg');
+            background-image: url('imagens/wallpaper003.jpg');
             background-position: center top;
             background-repeat: no-repeat;
             background-size: cover;
-            height: 100vh;
+            /*
+            countain = mostra a imagem sem corte,ela 100%
+            
+            cover = vai cobrir a tela com a imagem, mesmo se tiver que corta-la
+            
+            */
+            background-attachment: fixed;
+            /*
+            Shorthand - background
+            color > image > position > repeat > [size]não está funcionando > attachment
+
+            background: black url('imagens/wallpaper003.jpg') center top no-repeat fixed;
+            */
+            
         }
         main{
             background-color: white;
@@ -26,6 +40,10 @@
 <body>
     <main>
         <h1>Texto de Imagem de Fundo</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quia debitis culpa minus nesciunt, ea quisquam et ad aut explicabo qui quis expedita nostrum earum laboriosam dolores, deserunt labore placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis qui fugiat voluptatum quaerat dignissimos odio blanditiis non incidunt laudantium, temporibus ducimus commodi amet accusamus excepturi odit praesentium, inventore a? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cum deleniti. Fuga dignissimos beatae blanditiis provident! Error dolores ullam impedit ex animi odio. Dolor repudiandae, porro soluta fuga aliquam repellat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quia debitis culpa minus nesciunt, ea quisquam et ad aut explicabo qui quis expedita nostrum earum laboriosam dolores, deserunt labore placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis qui fugiat voluptatum quaerat dignissimos odio blanditiis non incidunt laudantium, temporibus ducimus commodi amet accusamus excepturi odit praesentium, inventore a? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cum deleniti. Fuga dignissimos beatae blanditiis provident! Error dolores ullam impedit ex animi odio. Dolor repudiandae, porro soluta fuga aliquam repellat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quia debitis culpa minus nesciunt, ea quisquam et ad aut explicabo qui quis expedita nostrum earum laboriosam dolores, deserunt labore placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis qui fugiat voluptatum quaerat dignissimos odio blanditiis non incidunt laudantium, temporibus ducimus commodi amet accusamus excepturi odit praesentium, inventore a? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cum deleniti. Fuga dignissimos beatae blanditiis provident! Error dolores ullam impedit ex animi odio. Dolor repudiandae, porro soluta fuga aliquam repellat!</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quia debitis culpa minus nesciunt, ea quisquam et ad aut explicabo qui quis expedita nostrum earum laboriosam dolores, deserunt labore placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis qui fugiat voluptatum quaerat dignissimos odio blanditiis non incidunt laudantium, temporibus ducimus commodi amet accusamus excepturi odit praesentium, inventore a? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cum deleniti. Fuga dignissimos beatae blanditiis provident! Error dolores ullam impedit ex animi odio. Dolor repudiandae, porro soluta fuga aliquam repellat!</p>
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Corrupti quia debitis culpa minus nesciunt, ea quisquam et ad aut explicabo qui quis expedita nostrum earum laboriosam dolores, deserunt labore placeat. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas veritatis qui fugiat voluptatum quaerat dignissimos odio blanditiis non incidunt laudantium, temporibus ducimus commodi amet accusamus excepturi odit praesentium, inventore a? Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quasi, cum deleniti. Fuga dignissimos beatae blanditiis provident! Error dolores ullam impedit ex animi odio. Dolor repudiandae, porro soluta fuga aliquam repellat!</p>
     </main>
 </body>
