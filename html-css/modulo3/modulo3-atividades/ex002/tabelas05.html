@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Colunas de Tabelas</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        table{
+            border-collapse: collapse;
+            width: 400px;
+        }
+        td, th{
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+        .rosa{
+            background-color: pink;
+        }
+        .azul{
+            background-color: lightblue;
+        }
+        .verde{
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <table>
+        <colgroup>
+            <col class="rosa">
+            <col class="azul">
+            <col class="verde">
+            <col class="rosa">
+        </colgroup>
+        <caption>Cadastro de Pessoas</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Sexo</th>
+                <th>Idade</th>
+                <th>Profissão</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>João Silva</td>
+                <td>Masculino</td>
+                <td>34</td>
+                <td>Engenheiro</td>
+            </tr>
+            <tr>
+                <td>Maria Oliveira</td>
+                <td>Feminino</td>
+                <td>28</td>
+                <td>Professora</td>
+            </tr>
+            <tr>
+                <td>Carlos Pereira</td>
+                <td>Masculino</td>
+                <td>45</td>
+                <td>Médico</td>
+            </tr>
+            <tr>
+                <td>Larissa Costa</td>
+                <td>Feminino</td>
+                <td>31</td>
+                <td>Designer</td>
+            </tr>
+</body>
+</html>
