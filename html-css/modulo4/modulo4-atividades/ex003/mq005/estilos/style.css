@@ -47,8 +47,9 @@ menu a{
     text-decoration: none;
     text-align: center;
     background-color: rgb(86, 86, 86);
-    color: lightcoral;
+    color: snow;
     border-top: 2px solid rgba(0, 0, 0, 0.581);
+    transition: background-color 0.5s;
 }
 
 menu a:hover{
