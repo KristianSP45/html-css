@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightcoral;
+
+            display: flex;
+            flex-direction: row;
+
+            /*
+            CONFIRUGAÇÕES PARA O "PAI"
+            Padrão br(exemplo):
+            flex-direction: row; main-start e main-end = Esquerda para Direita
+            flex-direction: column; cross-start e cross-end = Cima para Baixo
+
+            Padrão jp(exemplo):
+            flex-direction: row-reverse;  main-start e main-end = Direita para Esquerda
+            flex-direction: column-reverse; cross-start e cross-end = Baixo para Cima
+            
+            obs: o que muda é o main-axis(eixo principal), o cross-axis(eixo transversal) continua igual, no caso da linha sempre pra baixo e coluna pra direita
+            */
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
