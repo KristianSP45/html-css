@@ -12,6 +12,14 @@
         :  = pseudo-class
         :: = pseudo-element
         >  = children
+
+        Pseudo-elemento = parte específica ou conteúdo extra do elemento 
+
+        exemplos...
+
+        Pseudo-classe	:	a:hover	“O estado do elemento”
+
+        Pseudo-elemento	::	p::first-line	“Uma parte do elemento”
         */
         body {
             font-family: Arial, Helvetica, sans-serif;
@@ -33,15 +41,15 @@
             color: darkorange;
         }
 
-        .especial{
+        .especial {
             background-color: rgb(255, 106, 106);
         }
 
-        .especial::before{
+        .especial::before {
             content: '⇒';
         }
 
-        .especial::after{
+        .especial::after {
             content: '⇐';
         }
     </style>
@@ -51,7 +59,8 @@
     <h1>Personalizando Links</h1>
     <ul>
         <li><a href="https://github.com/KristianSP45" target="_blank" class="especial">Repositório GitHub</a></li>
-        <li><a href="https://store.steampowered.com/app/3240220/Grand_Theft_Auto_V_Enhanced/" target="_blank">Jogo do Século</a></li>
+        <li><a href="https://store.steampowered.com/app/3240220/Grand_Theft_Auto_V_Enhanced/" target="_blank">Jogo do
+                Século</a></li>
         <li><a href="https://www.youtube.com/@alanzoka" target="_blank">TOP Youtuber do Brasil</a></li>
     </ul>
 </body>
