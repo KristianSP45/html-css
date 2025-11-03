@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightcoral;
+            height: 200px;
+            display: flex;
+            flex-flow: row nowrap;
+            justify-content: space-evenly;
+            align-items: center;
+
+            /*
+            justify-contente: ; faz o alinhamento de acordo com o main-axis
+
+            justify-content: flex-start; = o primeiro item vai ficar grudado main-start
+
+            justify-content: flex-end; = o ultimo item vai ficar grudado main-end
+
+            justify-content: center; = vai calcular o centro do container e colocar junto um ao lado do outro no meio
+
+            justify-content: space-between; = primeiro item no main-start e ultimo no main-end e todos os outro no meio com espaçamento igual
+            |🟦--1--🟦--1--🟦|
+
+            justify-content: space-evenly; = antes e depois dos itens tenha espaçamento iguais
+            |--1--🟦--1--🟦--1--🟦--1--|
+
+
+            justify-content: space-around; = pega a quantidade de itens,divide e centraliza, por exemplo: se tiver tres vai ter 3 espaços,assim centralizando cada 1 dos 3 itens em 1 dos 3 espaços.
+            obs:visualmente parece,mas não esta centralizado
+            |--½--🟦--1--🟦--1--🟦--½--|
+
+            */
+
+            /*align-items: ; = faz o alinhamento de acordo com o cross-axis
+
+            align-items: stretch; = padrão,estica os elementos no sentido cross-axis
+
+            align-items: flex-start; = os elementos vão ficar grudado no cross-start
+
+            align-items: flex-end; = os elementos vão ficar grudado no cross-end
+
+            align-items: center; = calcular o espaço entre o cross-start e cross-end e centraliza
+            */
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
