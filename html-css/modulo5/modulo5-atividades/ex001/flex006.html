@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container{
+            background-color: lightcoral;
+
+            height: 400px;
+            display: flex;
+            flex-flow: row wrap;
+            align-content: space-evenly;
+
+            /*
+            align-content → eixo cruzado, mas por linha, só se tiver wrap
+
+            align-content: stretch; = (padrão) faz o alinhamento de acordo com o cross-axis,mas quando estão empacotados, no caso flex-wrap: wrap;
+            
+            align-content: flex-start; = os elementos vão ficar grudado no cross-start
+
+            align-content: flex-end; = os elementos vão ficar grudado no cross-end
+
+            align-content: center; = calcular o espaço entre o cross-start e cross-end e centraliza
+
+            align-content: space-between; = O primeiro elemento vai pro início, o último elemento vai pro final, e os elementos restantes distribuem espaço igual entre elas.
+            |🟦 🟦 🟦|   <- primeira linha
+            |          |   <- espaço entre
+            |🟦 🟦 🟦|   <- última linha
+
+            align-content: space-evenly; = Espaço igual em tudo, incluindo bordas.
+            |--1--🟦 🟦 🟦--1--🟦 🟦 🟦--1--|
+            obs:fazer o exemplo igual o de cima é complicado,então usa a imaginação ai,a base é o exemplo do space-between
+
+            align-content: space-around; = Espaço igual ao redor de cada linha, mas metade do espaço nas bordas.
+            |--½--🟦 🟦 🟦--1--🟦 🟦 🟦--½--|
+            obs: mesma coisa vale para esse tambem
+
+            */
+            
+        }
+
+        div.item{
+            background-color: lightblue;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            text-align: center;
+            padding: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
