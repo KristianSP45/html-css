@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container1 {
+            background-color: lightcoral;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item1 {
+            background-color: lightblue;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+
+            /*
+            flex-basis: auto; = (Padrão)a largura dos itens para cada elemento é dada através do tamanho do seu conteúdo
+
+            flex-shrink: 1; = (Padrão) encolher, se o espaço -
+            flex-grow: 0; = (Padrão) crescer, se o espaço +
+
+            flex-grow: define quanto o item cresce quando sobra espaço
+            • funciona por proporção (não por pixels)
+            • soma todos os valores e divide o espaço entre eles
+
+            ex:
+            item1: flex-grow: 1;
+            item2: flex-grow: 3;
+
+            → total = 1 + 3 = 4 partes
+            → item1 pega 1/4 do espaço
+            → item2 pega 3/4 do espaço
+            (quem tem número maior cresce mais)
+
+            🧩 flex-shrink
+
+            flex-shrink: define quanto o item encolhe quando falta espaço
+            • também usa proporção
+
+            ex:
+            item1: flex-shrink: 1;
+            item2: flex-shrink: 3;
+
+            → total = 1 + 3 = 4 partes
+            → item1 perde 1/4 do espaço
+            → item2 perde 3/4 do espaço
+            (quem tem número maior encolhe mais)
+
+            💡 Resumo final
+
+            flex-grow → cresce quando sobra espaço
+            flex-shrink → encolhe quando falta espaço
+            Maior valor = mais efeito
+            Valores iguais = comportamento igual
+            */
+        }
+
+        div.container2 {
+            background-color: lightcoral;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item2 {
+            background-color: lightblue;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            text-align: center;
+            flex: 200px;
+        }
+
+        div#i1{
+            flex-grow: 0;
+            flex-shrink: 1;
+        }
+
+        div#i2{
+            flex-grow: 2;
+            flex-shrink: 0;
+        }
+
+        div#i3{
+            flex-grow: 1;
+            flex-shrink: 2;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container1">
+        <div class="item1">A</div>
+        <div class="item1">B</div>
+        <div class="item1">C</div>
+    </div>
+    <br>
+    <div class="container2">
+        <div class="item2" id="i1">A</div>
+        <div class="item2" id="i2">B</div>
+        <div class="item2" id="i3">C</div>
+    </div>
+</body>
+
+</html>
