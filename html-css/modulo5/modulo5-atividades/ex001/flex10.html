@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        div.container {
+            background-color: lightcoral;
+
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item {
+            background-color: lightblue;
+            border: 1px solid rgba(0, 0, 0, 0.5);
+            text-align: center;
+            /*
+            flex-basis: auto; = (Padrão)a largura dos itens para cada elemento é dada através do tamanho do seu conteúdo
+
+            flex-shrink: 1; = (Padrão) encolher, se o espaço -
+            flex-grow: 0; = (Padrão) crescer, se o espaço +
+            
+            flex: 0 1 auto; = padrão
+            OU
+            flex: initial;
+
+            flex: 0 0 auto; = flex mais rigido, não vai ser nada flexivel
+            OU
+            flex: none;
+
+            flex: 1 1 auto; = flex mais flexivel
+            OU
+            flex: auto;
+            */
+        }
+
+        div#i1{
+            /*flex-grow: 0;
+            flex-shrink: 1;
+            flex-basis: 200px;*/
+
+            flex: 1 0 200px;
+        }
+
+        div#i2{
+            /*flex-grow: 2;
+            flex-shrink: 0;
+            flex-basis: 150px;*/
+
+            flex: 2 0 150px;
+        }
+
+        div#i3{
+            /*flex-grow: 1;
+            flex-shrink: 8;
+            flex-basis: auto;*/
+
+            flex: 1 8 auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+    </div>
+</body>
+</html>
