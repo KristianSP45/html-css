@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid Layout na prática</title>
+    <style>
+        div.container{
+            border: 3px solid lightskyblue;
+            height: 300px;
+            display: grid;
+            /*transforma o container em um grid (linhas e colunas).*/
+            grid-template-columns: auto auto auto;
+            /*cria 3 colunas com largura automática (ajusta ao conteúdo).*/
+            grid-template-rows: auto auto auto;
+            /*cria 3 linhas com altura automática.*/
+            gap: 5px;
+            /*adiciona espaçamento de 5px entre linhas e colunas.*/
+
+            align-items: center;
+            justify-items: center;
+            align-content: space-evenly;
+            justify-content: space-evenly;
+
+            /*
+            align-items: ; & justify-items: ; = start,center e end (Padrão stretch)
+
+            align-content: ; & justify-content: ; = os 3 spaces,start,center e end (Padrão stretch)
+
+            “items” mexe dentro da célula,
+            “content” mexe no grid inteiro.
+
+            align-items ⭥ = alinhamento vertical
+            justify-items ⭤ = alinhamento horizontal
+            align-content ⭥ = alinhamento vertical
+            justify-content ⭤ = alinhamento horizontal
+            obs:Essa informação só se aplica ao grid
+            */
+        }
+
+        div.item{
+            border: 3px solid lightcoral;
+            text-align: center;
+            padding: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">A</div>
+        <div class="item">B</div>
+        <div class="item">C</div>
+        <div class="item">D</div>
+        <div class="item">E</div>
+        <div class="item">F</div>
+        <div class="item">G</div>
+    </div>
+</body>
+</html>
